@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inter:wght@700&display=swap');
+
+:root{
+    --base-color: #FFC700;
+    --text-color:  rgba(255, 255, 255, 0.7);
+
+}
+
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    text-align: center;
+    padding-top: 160px;
+    position: relative;
+    background-color: gray;
+    background-image: url(https://i.ibb.co/D5R4pyX/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 72px;
+
+    width: 714px;
+    height: 331px;
+    left: calc(50% - 714px / 2);
+    top: 160px;
+}
+
+.container .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 4px;
+
+    width: 714px;
+    height: 211px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.container .text h3{
+    color: #ffff;
+}
+
+.container .text h3 span{
+    color: var(--base-color);
+    padding-bottom: 5px;
+}
+
+.container .text h1{
+    color: var(--base-color);
+    font-family: 'Emilys Candy';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+
+    width: 714px;
+    height: 160px;
+    top: 10px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.container .text p{
+    width: 557px;
+    height: 24px;
+    top: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--text-color);
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.container div.button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+
+    width: 371px;
+    height: 48px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.container div.button a {
+    padding: 12px 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    gap: 8px;
+
+    width: 229px;
+    height: 48px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.container .button a.read{
+    padding: 12px 32px;
+    font-weight: 400;
+    color: white;
+    width: 229px;
+    height: 48px;
+    opacity: 70%;
+}
+.container .button a.play{
+    padding: 12px 32px;
+    color: black;
+    background-color: var(--base-color);
+    width: 229px;
+    height: 48px;
+    opacity: 1;
+}
+
+.container .button a.read:hover,
+.container .button a.play{
+    color: black;
+    background-color: var(--base-color);
+}
